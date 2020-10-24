@@ -1,0 +1,20 @@
+body{
+margin: auto;
+width:100%;
+}
+
+header, footer{
+    background-color: black;
+    color: #ffffff;
+}
+
+main{
+    width:960px;
+    margin: auto;
+    background-color: grey;
+}
+
+#areaDrawing{
+    width: 500px;
+    height: 500px;
+}
