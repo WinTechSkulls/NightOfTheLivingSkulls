@@ -1,20 +1,50 @@
 body{
-margin: auto;
-width:100%;
+    margin: auto;
+    width:100%;
+    background-color: grey;
 }
 
+
+/*HTML5 Semantic Tags*/
 header, footer{
     background-color: black;
     color: #ffffff;
+    text-align: center;
+    padding:1em 0;
 }
 
 main{
     width:960px;
     margin: auto;
-    background-color: grey;
+    
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+
+/* IDs */
+#container{
+    position: relative;
+    min-height: 100vh;
+}
+
+#wrapper{
+    padding-bottom: 100px;
 }
 
 #areaDrawing{
-    width: 500px;
-    height: 500px;
+   text-align: center; 
+}
+
+#areaCanvas{
+    width: 960px;
+    height: 700px;
+    background-color:#ffffff;
+    vertical-align: middle;
+    margin:1em auto;
 }
