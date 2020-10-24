@@ -1,0 +1,1 @@
+//Script file for decorations menu for Night of the Living Skulls

@@ -1,0 +1,1 @@
+//Script file for drop area of Night of the Living Skulls
