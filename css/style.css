@@ -77,3 +77,15 @@ footer{
     width:780px;
     background:  #ffffff url("../imgs/SkullVector.svg") no-repeat center;
 }
+
+#dumpzone{
+    width: 140px;
+    height: 140px;
+    border:thin dashed #777;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100pt;
+    background-color: #ffffff;
+    z-index: 5;
+}
