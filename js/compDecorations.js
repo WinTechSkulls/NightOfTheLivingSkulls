@@ -1,35 +1,110 @@
 //Script file to generate the decoration shapes
 
 
-var canvas = document.getElementById("areaCanvas");
+$(function () {
+
+
+
+
+    //Star
+    /*  var star = $("#areaCanvas").drawPolygon({
+         fillStyle: "#36c",
+         x: 100, y: 100,
+         radius: 50,
+         sides: 5,
+         concavity: 0.5,
+         draggable: true,
+     })
+     
+     star.addClass("menuItem"); */
+
+
+    /* $("#areaCanvas").droppable({
+        drop: function (event, ui) {
+            //this if condition is for avoiding multiple time drop and attachment of same item
+            if (ui.draggable.hasClass("menuItem")) {
+                var $item = $(ui.helper).clone(); //getting the cloned item
+                $item.removeClass("menuItem");
+                // $item.html("<div id='e3' class='dragged'>Clone</div>");
+                $(this).append($item);
+                makeDraggable($item);
+            }
+        }
+    }) */
+
+
+    $("#dropzone").droppable({
+        drop: function (event, ui) {
+            //this if condition is for avoiding multiple time drop and attachment of same item
+            if (ui.draggable.hasClass("menuItem")) {
+                var $item = $(ui.helper).clone(); //getting the cloned item
+                $item.removeClass("menuItem");
+                $item.addClass("dragged");
+                $(this).append($item);
+                makeDraggable($item);
+            }
+        }
+    })
+
+    function makeDraggable($item) {
+        $item.draggable({
+            start: function () { },
+            stop: function () {
+                console.log('stopped')
+            }
+        });
+    }
+
+    $(".menuItem").draggable({
+        appendTo: "#dropzone",
+        helper: "clone",
+        start: function () { },
+        stop: function () {
+            console.log('stopped')
+        }
+    });
+
+
+});
+
+
+
+
+
+
+
+
+//////////////////////////////////////////
+
+/* var canvas = document.getElementById("areaCanvas");
 var ctx = canvas.getContext("2d");
 ctx.fillStyle = "#FF0000";
-ctx.fillRect(0, 0, 150, 75);
+ctx.fillRect(0, 0, 150, 75); */
 
 
 
 
-const s = ( sketch ) => {
+/* const s = ( sketch ) => {
 
     let x = 100;
     let y = 100;
-  
+
     sketch.setup = () => {
       sketch.createCanvas(200, 200);
       sketch.parent('areaDrawing');
     };
-  
+
     sketch.draw = () => {
       sketch.background(0);
       sketch.fill(255);
       sketch.rect(x,y,50,50);
     };
   };
-  
-  let myp5 = new p5(s);
 
-  
-  
+  let myp5 = new p5(s); */
+
+
+
 /* $( function() {
     $( myp5 ).draggable();
   } ); */
