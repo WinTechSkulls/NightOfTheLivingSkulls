@@ -37,6 +37,11 @@ footer{
     padding-bottom: 100px;
 }
 
+#floatClear{
+    margin-top: 5px;
+    clear:both;
+}
+
 #areaDrawing{
    text-align: center; 
 }
