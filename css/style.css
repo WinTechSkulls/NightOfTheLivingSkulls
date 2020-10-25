@@ -74,7 +74,8 @@ footer{
 }
 
 #dragzone{
-    width:155px;
+    width:140px;
+    text-align: center;
 }
 
 
@@ -90,7 +91,6 @@ footer{
     text-align: center;
     vertical-align: middle;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 100pt;
     background-color: #ffffff;
     z-index: 5;
 }
@@ -121,4 +121,5 @@ footer{
   }
   #colorPicker {
     border-right: 10px solid #003cb3;
+    width: 120px;
   }
