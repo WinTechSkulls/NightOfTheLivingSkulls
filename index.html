@@ -28,6 +28,17 @@
       <p>For Technica 2020</p>
     </footer>
   </div>
+  
+  <div id="mydiv"></div>
+  <script type="text/babel">
+    class Hello extends React.Component {
+      render() {
+        return <h1>Hello World!</h1>
+      }
+    }
+
+    ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+  </script>
 
 
   <!-- jQuery UI 1.12.1 -->
@@ -37,6 +48,7 @@
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
   <!-- p5.js CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
