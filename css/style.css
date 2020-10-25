@@ -94,13 +94,22 @@ footer{
     background-color: #ffffff;
     z-index: 5;
 }
-.color-palette {
+
+.inp {
+    border: 1px solid #949494;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 110%;
+  }
+
+  .color-palette {
     height: 100px;
     width: 100px;
     background: red;
     display: none;
-  }
-  .palette {
+}
+
+.palette {
     margin-top: 5px;
     width: 270px;
     height: 220px;
@@ -111,15 +120,18 @@ footer{
     padding: 1px;
     position: absolute;
     z-index: 1000;
-  }
-  .color-option {
+}
+
+.color-option {
     width: 18px;
     height: 18px;
     margin: 3px;
     cursor:pointer;
     float: left;
-  }
-  #colorPicker {
+}
+
+#colorPicker {
     border-right: 10px solid #003cb3;
-    width: 120px;
-  }
+    width: 70%;
+}
+
