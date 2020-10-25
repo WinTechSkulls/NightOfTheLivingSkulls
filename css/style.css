@@ -48,3 +48,32 @@ footer{
     vertical-align: middle;
     margin:1em auto;
 }
+
+.menuItem, .menuItem>img, .dragged, .dragged>img{
+    width:60px;
+    height:60px;
+    border:none;
+}
+
+.menuItem{
+    float:right;
+    margin:5px;
+}
+
+#dragzone,#dropzone{
+    height:700px;
+    background-color: #ffffff;
+    border:solid thin #000;
+    margin:5px;
+    float:left;
+}
+
+#dragzone{
+    width:140px;
+}
+
+
+#dropzone{
+    width:780px;
+    background:  #ffffff url("../imgs/SkullVector.svg") no-repeat center;
+}
