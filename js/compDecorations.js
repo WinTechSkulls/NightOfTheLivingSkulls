@@ -64,6 +64,19 @@ $(function () {
         }
     });
 
+    $("div.dragged>img").click(function(){
+        $(this).html("<p>test</p>");
+    });
+
+    $("#dumpzone").droppable({
+        drop: function (event, ui){
+            var $item = $(ui);
+            $item.css("display","none");
+            remove($item);
+        }
+    })
+
+    
 
 });
 
